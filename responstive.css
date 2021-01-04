@@ -1,0 +1,132 @@
+/*media query for tablet*/
+@media only screen and (min-width: 768px) {
+
+    
+    
+    .cta{
+        font-size: 2.5rem;
+        padding: 20px 60px;
+    }
+    h1.section-titel{
+        font-size: 6rem;
+    }
+   
+    /*services section*/
+    #services .services-bottom .service-item {
+        flex-basis: 45%;
+        margin: 2.5%;
+    }
+    /*end services section*/
+    /*porjcet*/
+    #porjcets .porjcet-item{
+        flex-direction: row;
+    }
+    #porjcets .porjcet-item:nth-child(even){
+        flex-direction: row-reverse;
+    }
+    #porjcets .porjcet-item{
+        height: 400px;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+    #porjcets .porjcet-info{
+        height: 100%;
+        
+    } 
+    #porjcets .porjcet-img{
+        height: 100%;
+        
+    }
+     /*end porjcet*/
+    /*about*/
+    #about .about{
+        flex-direction: row;
+    }
+    #about .col-left{
+        width: 600px;
+        height: 500px;
+        padding: 60px;
+    }
+    #about .about .col-left .about-img::after{
+        left: -35px;
+        top: 34px;
+        height: 98%;
+        width: 98%;
+        border: 10px solid crimson;
+    }
+    #about .col-right{
+        text-align: left;
+        padding: 30px;
+    }
+    #about .col-right h1{
+        text-align: left;
+    }
+    /*end about*/
+    /*contact*/
+    #contact .contact{
+        flex-direction:column;
+        padding: 100px 0;
+        align-items: center;
+        justify-content: center;
+        min-width: 20vh;
+        
+    }
+    #contact .contact-items{
+        width: 20%;
+        display: flex;
+        flex-direction:row;
+        padding: 20px;
+        margin: 0;
+    }
+    #contact .contact-item{
+       margin: 20px;
+       
+    }
+    
+    
+    /*end contact*/
+      
+}
+/*end media query for tablet*/
+
+
+/* media query for desktop*/
+@media only screen and (min-width: 1200px){
+    /*header*/
+    #header .hamburger{
+        display: none;
+    }
+    #header .nav-list ul{
+        position: inherit;
+        margin-left: 400px;
+        display: block;
+        height: auto;
+        width: fit-content;
+        background-color: transparent
+    }
+    #header .nav-list ul li{
+        display: inline-block;
+    }
+    #header .nav-list ul li a{
+        font-size: 1.8rem;
+    }
+    #header .nav-list ul a::after{
+        display: none;
+        
+        
+    }
+    /*end header*/
+    #services .services-bottom .service-item{
+        flex-basis: 22%;
+        margin: 1.5%;
+    }
+    #header{
+
+    
+ 
+}
+
+
+/*end media query for desktop*/
+
